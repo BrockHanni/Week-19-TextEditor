@@ -1,61 +1,36 @@
-### User Story
+# PWA-Text-Editor
 
-AS A developer
+This is is JATE (just-another-text-editor). This text editor allows a user to write detailed script, and anyother text, it will save to local storage so users can see it whenver they'd like. Users can also click install (on the top left) and the app will be installed onto their desktop!
 
-I WANT to create notes or code snippets with or without an internet connection
+## Usage
 
-SO THAT I can reliably retrieve them for later use
+To use, write on the text lines, and whenever you hit enter, the lines will be saved.
 
-### Acceptance Criteria
+## Test
 
-GIVEN a text editor web application
+Write some text, test it out, install it onto your desktop
 
-WHEN I open my application in my editor
+## Contributing/Contact
 
-THEN I should see a client server folder structure
+To submit bug reports, feature requests, or pull requests, please email me at hannibr26@gmail.com, or visit my GitHub page: BrockHanni(https://github.com/BrockHanni)
 
-WHEN I run `npm run start` from the root directory
+## License
 
-THEN I find that my application should start up the backend and serve the client
+Licenses used: N/A
 
-WHEN I run the text editor application from my terminal
+## Deployment
 
-THEN I find that my JavaScript files have been bundled using webpack
+https://text-editor-hanni-df42d79d9f8b.herokuapp.com/
 
-WHEN I run my webpack plugins
+## Screenshots
 
-THEN I find that I have a generated HTML file, service worker, and a manifest file
+![Screenshot](Screenshot.jpg)
 
-WHEN I use next-gen JavaScript in my application
-
-THEN I find that the text editor still functions in the browser without errors
-
-WHEN I open the text editor
-
-THEN I find that IndexedDB has immediately created a database storage
-
-WHEN I enter content and subsequently click off of the DOM window
-
-THEN I find that the content in the text editor has been saved with IndexedDB
-
-WHEN I reopen the text editor after closing it
-
-THEN I find that the content in the text editor has been retrieved from our IndexedDB
-
-WHEN I click on the Install button
-
-THEN I download my web application as an icon on my desktop
-
-WHEN I load my web application
-
-THEN I should have a registered service worker using workbox
-
-WHEN I register a service worker
-
-THEN I should have my static assets pre cached upon loading along with subsequent pages and static assets
-
-WHEN I deploy to Heroku
-
-THEN I should have proper build scripts for a webpack application
-
-Link to the assignment [Here] (https://courses.bootcampspot.com/courses/3156/assignments/50054)
+## Table of Contents
+- [Usage](#usage)
+- [Test](#test)
+- [Contributing/Contact](#contributing/Contact)
+- [License](#license)
+- [Deployment](#deployment)
+- [Screenshots](#screenshots)
+- [Table of Contents](#table-of-contents)
