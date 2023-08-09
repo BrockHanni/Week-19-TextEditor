@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Just Another Text Editor',
+        title: 'J.A.T.E.',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -36,19 +36,16 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons'),
+            sizes: [96, 128],
           },
         ],
       }),
     ],
     module: {
       rules: [
-        {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
       {
+        // tests for js, not including node_modules
         test: /\.m?js$/,
         exclude: /node_modules/,
         // We use babel-loader in order to use ES6.
@@ -60,8 +57,11 @@ module.exports = () => {
           },
         },
       },
-
-        ]
+        {
+          test: /\.css/,
+          use: ['style-loader', 'css-loader'],
+        },
+      ]
     },
   };
 };
